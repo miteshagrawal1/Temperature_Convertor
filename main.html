@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-400">
+  <div class="container pt-5 bg-white flex items-center flex-col justify-center py-5 mt-20 m-auto w-1/3 rounded-lg">
+    <h1 class="font-extrabold text-xl">Temperature Converter</h1><br>
+    <div class="box flex items-center flex-wrap justify-evenly w-3/4">
+        <span><b>Choose Unit:</b></span>
+        <span><input type="radio" name="iunit" id="icel"> CELSIUS</span>
+        <span><input type="radio" name="iunit" id="ifar"> FARHENHEIT</span>
+        <span><input type="radio" name="iunit" id="ikel"> KELVIN</span>
+    </div><br>
+    <span class="flex items-center justify-evenly w-3/4">Enter a Value: <input type="number" id="input" placeholder="Enter a value" class="value bg-white pl-3 h-8 border-2 border-black rounded-lg"></p></span><br>
+    <div class="box flex items-center flex-wrap justify-evenly w-3/4">
+        <span><b>Choose Unit:</b></span>
+        <span><input type="radio" name="ounit" id="ocel"> CELSIUS</span>
+        <span><input type="radio" name="ounit" id="ofar"> FARHENHEIT</span>
+        <span><input type="radio" name="ounit" id="okel"> KELVIN</span>
+    </div>
+    <br>
+    <span class="flex items-center justify-evenly w-3/4">Required Ans: <p class="ans bg-white w-52 px-5 h-8 border-2 border-black rounded-lg" id="result"></p></span><br>
+    <button id="submit" class="border-black bg-blue-600 px-10 text-white font-semiboldś rounded-md py-2 hover:shadow-xl">Convert</button>
+  </div>
+</body>
+<script src="js.js"></script>
+</html>
